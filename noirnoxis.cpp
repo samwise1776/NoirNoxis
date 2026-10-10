@@ -293,6 +293,7 @@ int main() {
                 "notes       - Notes manager\n"
                 "clear       - Clear terminal\n"
                 "exit        - Exit\n\n";
+                "about - About this";
         }
         else if (util == "exit" || util == "stop") {
             std::cout << "Goodbye!\n";
@@ -424,6 +425,10 @@ int main() {
             if (option == "1") std::cout << (temp * 9.0 / 5.0) + 32 << " F\n";
             else if (option == "2") std::cout << (temp - 32) * 5.0 / 9.0 << " C\n";
             else std::cout << "Unknown option.\n";
+        }
+
+        else if (util == "about") {
+            std::cout << "--About NoirNoxis--\n\n- License MIT\nIdea: NoirNoxis is commited to making terminal better\n- Next feature: GTk\n";
         }
         else if (util == "fileinfo") {
             std::string path;
